@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://api.jyworld.tk",
+  "proxy": "http://api.jyworld.tk/frontend",
   "homepage": "https://JYK0128.github.io",
   "dependencies": {
     "@hookform/resolvers": "^1.0.1",
