@@ -1,0 +1,91 @@
+/* Preview Frame */
+#preview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 65px;
+  bottom: 0;
+  transition: all .2s;
+  background-color: black;
+}
+
+#preview-frame {
+  border: 0;
+  position: absolute;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.preview-desktop {
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.preview-tablet {
+  width: 768px;
+  height: 100%;
+  left: calc(50% - 384px);
+}
+
+.preview-mobile {
+  width: 380px;
+  height: 680px;
+  left: calc(50% - 190px);
+  top: 0;
+  margin-top: 20px;
+}
+
+/* Preview Devices buttons */
+.preview-devices {
+  float: left;
+  padding: 10px 0 0 15px;
+}
+
+.preview-devices ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  line-height: 1.0;
+}
+
+.preview-devices li {
+  float: left;
+  width: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.preview-devices a {
+  font-size: 18px;
+  overflow: hidden;
+  color: #555;
+  outline: 0;
+  width: 50px;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.preview-devices li:hover a,
+.preview-devices .preview-devices-active a {
+  color: #00a6eb;
+}
+
+.preview-devices-active a {
+  border-bottom: 2px solid #00a6eb;
+}
+
+.preview-devices-active a {
+  padding-bottom: 11px;
+}
+
+.preview-devices li:hover a,
+.preview-devices li.preview-devices-active a {
+  color: #00a6eb;
+}
+
+.preview-devices li:hover,
+.preview-devices li:hover a {
+  transition: color 0.3s ease;
+}

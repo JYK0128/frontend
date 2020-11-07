@@ -2,19 +2,42 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://api.jyworld.tk",
+  "homepage": "https://JYK0128.github.io",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "@hookform/resolvers": "^1.0.1",
+    "@toast-ui/editor-plugin-chart": "^1.0.0",
+    "@toast-ui/editor-plugin-code-syntax-highlight": "^1.0.0",
+    "@toast-ui/editor-plugin-color-syntax": "^1.0.1",
+    "@toast-ui/editor-plugin-table-merged-cell": "^1.3.1",
+    "@toast-ui/editor-plugin-uml": "^1.0.0",
+    "@toast-ui/react-editor": "^2.5.0",
+    "@types/joi": "^14.3.4",
+    "@types/react": "^16.9.56",
+    "@types/react-bootstrap": "^0.32.24",
+    "@types/react-dom": "^16.9.9",
+    "@types/react-frame-component": "^4.1.1",
+    "@types/react-router-dom": "^5.1.6",
+    "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0",
+    "fsevents": "^2.2.1",
+    "joi": "^17.3.0",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^16.14.0",
+    "react-frame-component": "^4.1.3",
+    "react-hook-form": "^6.10.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1",
+    "typescript": "^3.9.7"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "export PORT=80 && export NODE_OPTIONS=--max_old_space_size=512 && react-scripts start",
+    "start-windows": "set PORT=80 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +53,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@hookform/devtools": "^2.2.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   }
 }
